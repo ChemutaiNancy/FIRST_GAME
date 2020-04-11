@@ -1,0 +1,40 @@
+
+flower.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+drawing
+  rotate: false
+  xy: 1, 223
+  size: 300, 200
+  orig: 300, 200
+  offset: 0, 0
+  index: -1
+deco
+  rotate: false
+  xy: 1, 1
+  size: 229, 220
+  orig: 229, 220
+  offset: 0, 0
+  index: -1
+transparent
+  rotate: false
+  xy: 303, 196
+  size: 222, 227
+  orig: 222, 227
+  offset: 0, 0
+  index: -1
+images
+  rotate: false
+  xy: 527, 195
+  size: 221, 228
+  orig: 221, 228
+  offset: 0, 0
+  index: -1
+rose
+  rotate: false
+  xy: 750, 195
+  size: 221, 228
+  orig: 221, 228
+  offset: 0, 0
+  index: -1
