@@ -6,17 +6,19 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 public class MyGdxGame extends ApplicationAdapter {
 	private SpriteBatch batch;
-	private BitmapFont font;
+	private Texture img;
+	private Sprite sprite;//used to convert image
 	
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		font = new BitmapFont();
-		font.setColor(Color.BLUE);
+		img = new Texture("circle.png");
+		sprite = new Sprite(img);//convert image in to sprite
 	}
 
 	@Override
@@ -26,7 +28,7 @@ public class MyGdxGame extends ApplicationAdapter {
 
 //		start batch to execute the code
 		batch.begin();
-		font.draw(batch, "Hello World", 100, 400);
+		sprite.draw(batch);
 		batch.end();
 	}
 	
@@ -34,6 +36,6 @@ public class MyGdxGame extends ApplicationAdapter {
 	public void dispose () {
 		//dispose resources
 		batch.dispose();
-		font.dispose();
+		img.dispose();
 	}
 }
